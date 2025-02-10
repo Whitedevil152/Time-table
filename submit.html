@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Info Techno</title>
+<style>
+body{
+ background-color:skyblue;
+}
+div {
+  width: 550px;
+  margin: auto;
+  background-color: plum;
+}
+</style>
+</head>
+<body>
+<h1 align="center" style="background-color:plum;">TARANG 2K25</h1>
+<h1 align="center">Registration form to participate in the events of tarang 2k25</h1>
+<form onsubmit="return showAlert(event)">
+<div>
+<label>Name Of the Student:</label>
+<input type="text" placeholder="Enter name"><br><br>
+
+<h3><label>Events you want to participate</label><br></h3>
+<input type="checkbox" id="Rangoli Competition" value="Rangoli Competition" name="abc">Rangoli Competition<br>
+<input type="checkbox" id="Dance Competition" value="Dance Competition" name="abc">Dance Competition<br>
+<input type="checkbox" id="Singing Competition" value="Singing Competition" name="abc">Singing Competition<br>
+<input type="checkbox" id="Mehandi Competition" name="abc">Mehandi Competition<br>
+<input type="checkbox" id="Tattoo Competition" name="abc">Tattoo Competition<br>
+<input type="checkbox" id="Fate Competition" name="abc">Fate Competition<br>
+<input type="checkbox" id="Art Gallery Competition" name="abc">Art Gallery Competition<br><br>
+
+<h3><label>Branch:</label><br></h3>
+<input type="radio" name="b1">AI<br>
+<input type="radio" name="b1">CSE<br>
+<input type="radio" name="b1">CIVIL<br>
+<input type="radio" name="b1">Electrical<br>
+<input type="radio" name="b1">ETC<br><br>
+
+<h3><label>Semester:</label><br></h3>
+<input type="radio" name="s1">I<br>
+<input type="radio" name="s1">II<br>
+<input type="radio" name="s1">III<br>
+<input type="radio" name="s1">IV<br>
+<input type="radio" name="s1">V<br>
+<input type="radio" name="s1">VI<br>
+<input type="radio" name="s1">VII<br>
+<input type="radio" name="s1">VIII<br>
+
+<h3><label>Contact No.:</label></h3>
+<input type="text" maxlength="10" pattern="[0-9]{10}"><br><br>
+
+<input type="submit" value="Submit">
+</div>
+</form>
+
+<script>
+function showAlert(event) {
+  event.preventDefault();
+  alert("The form has been submitted successfully!");
+  // Add any other logic you want to execute on form submission here
+  return false; // This keeps the form from navigating away
+}
+</script>
+
+</body>
+</html>
